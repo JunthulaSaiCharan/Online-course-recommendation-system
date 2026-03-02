@@ -1,10 +1,10 @@
-# Online Course Recommendation System
+**# Online Course Recommendation System**
 
-## Project Overview
+**## Project Overview**
 
 This project develops an online course recommendation system using a combination of Collaborative Filtering (SVD, Item-Based CF) and Content-Based Filtering techniques. The goal is to provide personalized course suggestions to users based on their historical ratings and course content, enhancing the learning experience.
 
-## Features
+**## Features**
 
 *   **Data Loading & Inspection**: Efficient loading of course data from an Excel file and initial examination.
 *   **Data Cleaning**: Handling of missing values and duplicate entries to ensure data quality.
@@ -18,7 +18,7 @@ This project develops an online course recommendation system using a c
 *   **Model Evaluation**: Assessment of model performance using standard metrics like RMSE and MAE.
 *   **Model Persistence**: Saving trained models for future use without re-training.
 
-## Project Structure
+**## Project Structure**
 
 The project workflow is structured as follows:
 
@@ -33,7 +33,7 @@ The project workflow is structured as follows:
 9.  **Recommendation Display & Visualization**: Presenting recommendations with course names and scores.
 10. **Save Trained Models**: Storing the trained models for deployment or later use.
 
-## Technologies Used
+**## Technologies Used**
 
 *   **Python**: Primary programming language.
 *   **Pandas**: Data manipulation and analysis.
@@ -43,7 +43,7 @@ The project workflow is structured as follows:
 *   **Surprise**: A Python scikit for building and analyzing recommender systems.
 *   **Joblib**: For saving and loading Python objects (trained models).
 
-## Setup and Installation
+**## Setup and Installation**
 
 To run this project, you'll need a Python environment and the required libraries. It's recommended to use a virtual environment.
 
@@ -68,7 +68,7 @@ To run this project, you'll need a Python environment and the require
     ```
     *Note: The project specifically requires `numpy<2` for compatibility with `scikit-surprise`. If you encounter issues, try: `pip uninstall numpy && pip install 'numpy<2'`*
 
-## Dataset
+**## Dataset**
 
 The dataset used for this project is `online_course_recommendation.xlsx`. It should be placed in the same directory as the notebook or its path should be updated in the code.
 
@@ -85,7 +85,7 @@ The dataset used for this project is `online_course_recommendation.xlsx`.
     show_recommendations_with_scores(sample_user, top_n=10)
     ```
 
-## Saved Models
+**## Saved Models**
 
 The trained SVD and Hybrid models are saved as `best_svd_model.pkl` and `best_hybrid_model.pkl` respectively. These can be loaded to make predictions without re-training:
 
